@@ -1,0 +1,8 @@
+.myBoardTitle{
+    display: grid;
+    justify-content: center;
+}
+
+.lid {
+    font-size: xx-small;
+}

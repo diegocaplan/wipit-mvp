@@ -17,14 +17,13 @@
 //     =====`-.____`.___ \_____/___.-`___.-'=====
 //                       `=---='
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-const server = require('./src/app.js');
-const { conn } = require('./src/db.js');
+const server = require("./src/app.js");
+const { conn } = require("./src/db.js");
+const socket_server = require("./socket_src/socket_server.js");
 
-
-// Syncing all the models at once.
-conn.sync({ force: true  }).then(() => { //EN TRUE PARA BORRAR
-  server.listen(process.env.PORT , async () => {
-    console.log('%s listening at 3001');
-     // eslint-disable-line no-console
+conn.sync({ force: false }).then(() => {
+  const expressServer = server.listen(process.env.PORT || 3001, async () => {
+    console.log("%s listening at 3001");
   });
+  socket_server(expressServer);
 });

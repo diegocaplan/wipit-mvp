@@ -1,0 +1,260 @@
+
+:root {
+  --primary-color: #432E30;
+  --primary-color-light: #8E7474;
+  --accent-color: #FE6A6B;
+  --accent-color-light: #FFE4E4;
+  --accent-color-dark: #B94B4C;
+  --white-color: #FAFBFC;
+  --light-gray-color: #C6CBD1;
+  --medium-gray-color: #959DA5;
+  --dark-gray-color: #444D56; 
+  --bg-color: #F8F8FA;
+  --code-bg-color: #F0E8E8;
+}
+
+.getStarted {
+  padding: 10px 22px;
+  background-color: var(--accent-color);
+  color: white;
+  position: relative;
+  text-decoration: none;
+  border: 0;
+  transition: all .3s ease-out;
+}
+
+.getStarted:after {
+  position: absolute;
+  content: "";
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--accent-color-light);
+  right: -0.4rem;
+  top: -0.4rem;
+  transition: all 0.3s ease-out;
+}
+
+.getStarted:hover {
+  text-shadow: 0px 1px 1px var(--accent-color-dark);
+  color: white;
+  transform: translate3D(0, -3px, 0);
+}
+
+.getStarted:hover::after {
+  transform: rotate(90deg);
+}
+
+.wipit_title {
+  margin-top: 1%;
+
+  font-size: 60px;
+  transform: scale(0.7, 0.6);
+
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  color: #f95959;
+}
+
+.code{
+  display: block;
+  
+}
+
+.hero__terminalPre {
+  display:block;
+  box-sizing: border-box;
+  
+  white-space: pre-line;
+  padding-top: 1rem;
+}
+
+/* .hero__terminal {
+  width: 60%;
+  margin: -11rem auto 3rem auto;
+  text-align: left;
+  color: white;
+  padding: 0 1rem;
+  border-radius: 4px;
+  background-color: #232323;
+  min-height: 285px;
+  animation: fadeUp 2s;
+  box-shadow: 0px 12px 36.8px 9.2px rgba(0, 0, 0, 0.1);
+}
+
+.hero__terminal pre {
+  white-space: pre-line;
+  padding-top: 1rem;
+} */
+
+.typing {
+  position: relative;
+}
+.typing::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  width: 100%;
+  color: white;
+  background: #1d1f20;
+  -webkit-animation: typing 4s steps(16) forwards, caret 1s infinite;
+          animation: typing 4s steps(16) forwards, caret 1s infinite;
+}
+
+@-webkit-keyframes typing {
+  to {
+    width: 0;
+  }
+}
+
+@keyframes typing {
+  to {
+    width: 0;
+  }
+}
+@-webkit-keyframes caret {
+  50% {
+    color: transparent;
+  }
+}
+@keyframes caret {
+  50% {
+    color: transparent;
+  }
+}
+
+.titles {
+  border-right: solid 3px rgba(163, 20, 219, 0.75);
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 1em;
+  font-family: 'Source Code Pro', monospace;
+  color: #fff;
+  font-size: x-large;
+}
+
+
+.titles {
+  animation: animated-text 4s steps(29,end) 1s 1 normal both,
+             animated-cursor 600ms steps(29,end) infinite;
+}
+
+
+
+@keyframes animated-text{
+  from{width: 0;}
+  to{width: 100%}
+}
+
+.titleform {
+  font-weight: 200;
+  font-size: 35px;
+  transform: scale(0.7, 0.7);
+  /* margin: 7.44px 0px; */
+  margin: 1%;
+  color: rgba(100, 123, 160, 255);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.descriptionform {
+  margin: -1rem auto 2rem auto;
+  font-weight: 300;
+  color: rgba(100, 123, 160, 255);
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.queEsWipit {
+  font-family: "Nunito Sans", sans-serif;
+  color: rgb(254, 84, 131, 0.5);
+}
+
+.logo {
+  padding-top: 3%;
+  height: 0%;
+}
+
+.btns {
+  transform: rotate(-90deg);
+  transform-origin: 100% 100%;
+}
+
+.back {
+  /* transform: rotate(-90deg); */
+  /* transform-origin: 100% 100%; */
+  /* padding-right: 10%; */
+  margin-top: auto;
+}
+
+.link {
+  font-size: 17px;
+}
+
+.step {
+  display: inline-block;
+  width: 30%;
+  margin: 10px 10px;
+  box-shadow: 0 0 5px 0 gray;
+  text-align: center;
+  border-radius: 13px;
+}
+
+.step h5 {
+  font-size: 1em;
+  padding-top: 7%;
+}
+
+.step img {
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .step {
+    width: 90%;
+    margin: 20px;
+    padding: 10px;
+  }
+  .step h5 {
+    font-size: 1.3em;
+  }
+}
+
+.boxes {
+  font-family: "Prompt", sans-serif;
+}
+
+.infotitle {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  /* margin: 12px 0px 0px; */
+  color: #432e30;
+  font-weight: bold;
+}
+
+.info {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 16px;
+  color: #646464;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.callout {
+  text-align: center;
+  padding: 1rem 0 3rem 0;
+}
+
+.button_primary {
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+
+.textStart {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 18px;
+  margin: 22px 0px 0px;
+  color: #432e30;
+  font-weight: bold;
+}

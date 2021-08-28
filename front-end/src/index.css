@@ -7,7 +7,29 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/* code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+} */
+
+
+code {
+  border-radius: 3px;
+  font-family: Space Mono, SFMono-Regular, Menlo,Monaco, Consolas, Liberation Mono, Courier New, monospace;
+  
+  color: var(--primary-color-light); 
+  display: block;
+  padding: 1em;
+  color: #e6e1dc;
 }
+
+.code--block {
+  white-space: pre-line;
+  padding: 0 1.5rem;
+}
+
+.code--inline {
+  padding: 3px 6px;
+  font-size: 80%;
+}
+

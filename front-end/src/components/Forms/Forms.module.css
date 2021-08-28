@@ -1,0 +1,12 @@
+.inputs {
+    border-bottom: 1px solid gray;
+}
+
+.invalidInput {
+    border: 2px solid red;
+}
+
+.invalidInputAlert {
+    color: red;
+    font-size: 2.5vh;
+}
